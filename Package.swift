@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -16,10 +16,10 @@ let package = Package(
 	targets: [
 		.target(
 			name: "Focus",
-			dependencies: ["Operadics"]),
+			dependencies: ["Operadics"],
+			path: "Sources/Focus"),
 		.testTarget(
 			name: "FocusTests",
 			dependencies: ["Focus", "Operadics", "SwiftCheck"]),
 	]
 )
-
