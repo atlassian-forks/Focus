@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
 	name: "Focus",
+	platforms: [
+        .iOS(.v10),
+    ],
 	products: [
 		.library(
 			name: "Focus",
@@ -11,7 +14,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/typelift/SwiftCheck.git", .branch("master")),
-		.package(url: "https://github.com/typelift/Operadics.git", .branch("master")),
+		.package(url: "https://github.com/atlassian-forks/Operadics", .branch("spm-support")),
 	],
 	targets: [
 		.target(
